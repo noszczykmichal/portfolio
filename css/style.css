@@ -4,6 +4,8 @@
     margin: 0 auto;
 }
 
+/* -------------- Header styles -------------- */
+
 .main-header{
     height: 70vh;
     width: 100vw;
@@ -18,7 +20,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 2em;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff;
     text-transform: uppercase;
     
@@ -33,5 +35,35 @@ hr{
 .main-content p{
     font-size: 0.75em;
     text-transform: none;
+}
 
+
+/* -------------- Navigation styles -------------- */
+
+
+.main-nav{
+    position: sticky;
+    background-color: #FF2C50;
+    z-index:100;
+    padding: 14px 20px;
+}
+
+.main-nav label,
+#drop-nav{
+    display: none;
+}
+
+.nav-menu{
+    text-align: center;
+}
+
+.nav-menu-item{
+    display: inline;
+}
+
+.nav-menu-item a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    padding: 14px 20px;
 }

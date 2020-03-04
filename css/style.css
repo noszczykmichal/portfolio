@@ -46,7 +46,7 @@
 }
 
 hr{
-    background-color: #8F14B8;
+    background-color: #543679;
     border: 0;
     height: 1.5px;
     width: 170px;
@@ -63,7 +63,7 @@ hr{
 
 .main-nav{
     position: sticky;
-    background-color: #FF2C50;
+    background-color: #543679;
     top: 0;
     z-index:100;
     padding: 14px 20px;
@@ -95,6 +95,25 @@ hr{
 .about-me-image{
     border-radius: 50%;
     margin-top: 40px;
-    
+    height: 30%;
+    width: 30%;
 }
+
+.myskills{
+    background-color: rgb(195, 69, 169);
+    padding: 25px 50px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.container i{
+    font-size: 50px;
+}
+
+
 

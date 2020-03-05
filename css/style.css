@@ -100,9 +100,15 @@ hr{
 }
 
 .myskills{
-    background-color: rgb(195, 69, 169);
-    padding: 25px 50px;
+    background-color: #c345a9;
+    padding: 25px 0px;
+    color: #fff;
 
+}
+
+.myskills h3{
+    background-color: #543679;
+    width: 100%;
 }
 
 .container{
@@ -113,15 +119,31 @@ hr{
 
 .container i{
     font-size: 50px;
+    color: #fff;
+}
+
+.container i:hover{
+    cursor: pointer;
 }
 
 /* -------------- Education Section styles -------------- */
 
+.main{
+    padding-top: 50px;
+}
+
 .header{
-    border: 2px solid blue;
+    background-color: #c345a9;
+    border: 2px solid #c345a9;
     border-radius: 10px;
     margin-bottom: 20px;
-    
+    color: #fff;
+}
+
+.header:hover{
+    cursor: pointer;
+    background-color: #963583;
+    border-color: #963583;
 }
 
 .panelsEducation{

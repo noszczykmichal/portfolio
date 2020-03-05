@@ -115,5 +115,21 @@ hr{
     font-size: 50px;
 }
 
+/* -------------- Education Section styles -------------- */
+
+.header{
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.panelsEducation{
+    display: none;
+}
+
+.active{
+    display: block;
+}
 
 

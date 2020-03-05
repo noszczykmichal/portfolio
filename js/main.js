@@ -1,4 +1,6 @@
 "use strict";
+//--------------Section About 
+
 
 //I grab elements in the DOM
 const contSoft=document.querySelector('[class*=contSoft]'); //I grab containers for the icons
@@ -30,5 +32,30 @@ contHard.addEventListener('mouseover', function(event){
     }
 })
 
+//--------------Section About 
 
+//adding accordion
+
+const main=document.querySelector('[class=main]');
+const header=document.querySelectorAll('[class=header]');
+// console.log("header", header);
+
+
+main.addEventListener('click', function(event){
+
+    //on every run of loop class 'active' is removed from all elements
+    for(let i=0; i<header.length; i++){
+        let removeActive=header[i].nextElementSibling;
+        removeActive.classList.remove('active');
+    }
+
+    //the clicked element is given additional class that allows it to be displayed
+    for(let j=0; j<header.length; j++){
+    if(event.target==header[j]){
+        let panel=header[j].nextElementSibling;
+        panel.classList.add('active');
+    }
+}
+    
+})
 

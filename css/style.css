@@ -7,10 +7,10 @@
 }
 
 .section{
-    padding-top: 9em;
+    padding: 9em;
     justify-content: center;
     text-align: center;
-    max-width: 1170px;
+    /* max-width: 1170px; */
 }
 
 .section h2, hr{
@@ -174,4 +174,48 @@ hr{
     display: block;
 }
 
+/* -------------- Portfolio Section styles -------------- */
 
+.portfolio{
+    background-color: #f2f1ed;
+}
+
+.portfolio .portfolio-wrapper{
+    display: flex;
+    flex: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item{
+    flex-basis: 25%;
+    height: 200px;
+    margin: 0;
+    position: relative;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item h3 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 123, 255, 0.8);
+	top: 0;
+	font-size: 3em;
+	color: #fff;
+	line-height: 200px;
+	font-weight: 300;
+	opacity: 0;
+	transition: all .3s;
+	margin: 0;
+}
+
+.portfolio .portfolio-wrapper .portfolio-item h3:hover {
+	opacity: 1;
+	
+}

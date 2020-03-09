@@ -7,7 +7,7 @@
 }
 
 .section{
-    padding: 9em;
+    padding-top: 9em;
     justify-content: center;
     text-align: center;
     max-width: 1170px;
@@ -89,6 +89,10 @@ hr{
     padding: 14px 20px;
 }
 
+.nav-menu-item a:hover{
+    background-color: #fff;
+    color: #543679;
+}
 /* -------------- About Section styles -------------- */
 
 

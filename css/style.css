@@ -7,10 +7,12 @@
 }
 
 .section{
-    padding: 9em;
-    justify-content: center;
     text-align: center;
-    /* max-width: 1170px; */
+    padding: 120px 0;
+}
+
+.section header{
+    margin-bottom: 75px;
 }
 
 .section h2, hr{
@@ -19,6 +21,11 @@
 
 .section p{
     margin: 30px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
 }
 
 .btn{
@@ -43,7 +50,6 @@
 
 .main-header{
     height: 70vh;
-    width: 100vw;
     display: flex;
     align-content: center;
     background-image: url('../img/header.jpg');
@@ -131,18 +137,18 @@ hr{
     width: 100%;
 }
 
-.container{
+.containerSkills{
     display: flex;
     justify-content: space-between;
     padding: 25px 50px;
 }
 
-.container i{
+.containerSkills i{
     font-size: 50px;
     color: #fff;
 }
 
-.container i:hover{
+.containerSkills i:hover{
     cursor: pointer;
 }
 
@@ -152,7 +158,7 @@ hr{
     padding-top: 50px;
 }
 
-.header{
+.headerAccordion{
     background-color: #c345a9;
     border: 2px solid #c345a9;
     border-radius: 10px;
@@ -160,13 +166,13 @@ hr{
     color: #fff;
 }
 
-.header:hover{
+.headerAccordion:hover{
     cursor: pointer;
     background-color: #963583;
     border-color: #963583;
 }
 
-.panelsEducation{
+.panelEducation{
     display: none;
 }
 
@@ -182,7 +188,7 @@ hr{
 
 .portfolio .portfolio-wrapper{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -200,7 +206,7 @@ hr{
     object-position: center;
 }
 
-.portfolio .portfolio-wrapper .portfolio-item h3 {
+.portfolio .portfolio-wrapper .portfolio-item h3{
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -215,7 +221,9 @@ hr{
 	margin: 0;
 }
 
-.portfolio .portfolio-wrapper .portfolio-item h3:hover {
+.portfolio .portfolio-wrapper .portfolio-item h3:hover{
 	opacity: 1;
 	
 }
+
+

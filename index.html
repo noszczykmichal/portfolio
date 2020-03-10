@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-content">
@@ -30,110 +32,130 @@
         </ul>
     </nav>
     <section class="section" id="about">
-        <h2>O mnie</h2>
-        <hr>
-        <img src="img/about-me.jpg" class="about-me-image" alt="Michał Noszczyk">
-        
-        <p>Nazywam się Michał Noszczyk jestem absolwentem anglistyki i ekonomii. Od zawsze interesowałem się programowaniem i nowymi technologiami. Rok temu podjąłem decyzję, że chcę przekuć dotychczasowe zaintersowania w pracę. Naukę zacząłem we własnym zakresie, a nie dawno ukończyłem szkołę programowania, która pozwoliła mi ustystematyzować dotychczasową wiedzę i umiejętności.</p>
-        <p>Każdą wolną chwilę poświecam na poszerzanie swojej wiedzy i tworzę nowe projekty. Jeśli chcesz się ze mną skontaktować zapraszam do sekcji "Kontakt". Poniżej również moje przykładowe projekty.</p>
-        <div class="myskills">
-            <h3>Umiejętności miękkie</h3>
-            <p class="display soft">najedź na ikonę</p>
-            <div class="container contSoft">
-                <i class="fas fa-users" value="Lubię pracę w zespole"></i>
-                <i class="far fa-comments" value="Sprawnie komunikuję się z ludźmi"></i>
-                <i class="fas fa-tasks" value="Umię zarządzać czasem i radzę sobie pod presją czasu"></i>
-                <i class="fas fa-user-graduate" value="Chętnie uczę się nowych rzeczy"></i>
+        <div class="container">
+            <header>
+                <h2>O mnie</h2>
+                <hr>
+            </header>
+            <img src="img/about-me.jpg" class="about-me-image" alt="Michał Noszczyk">
+            <p>Nazywam się Michał Noszczyk jestem absolwentem anglistyki i ekonomii. Od zawsze interesowałem się
+                programowaniem i nowymi technologiami. Rok temu podjąłem decyzję, że chcę przekuć dotychczasowe
+                zaintersowania w pracę. Naukę zacząłem we własnym zakresie, a nie dawno ukończyłem szkołę programowania,
+                która pozwoliła mi ustystematyzować dotychczasową wiedzę i umiejętności.</p>
+            <p>Każdą wolną chwilę poświecam na poszerzanie swojej wiedzy i tworzę nowe projekty. Jeśli chcesz się ze mną
+                skontaktować zapraszam do sekcji "Kontakt". Poniżej również moje przykładowe projekty.</p>
+            <div class="myskills">
+                <h3>Umiejętności miękkie</h3>
+                <p class="display soft">najedź na ikonę</p>
+                <div class="containerSkills contSoft">
+                    <i class="fas fa-users" value="Lubię pracę w zespole"></i>
+                    <i class="far fa-comments" value="Sprawnie komunikuję się z ludźmi"></i>
+                    <i class="fas fa-tasks" value="Umię zarządzać czasem i radzę sobie pod presją czasu"></i>
+                    <i class="fas fa-user-graduate" value="Chętnie uczę się nowych rzeczy"></i>
+                </div>
+                <h3>Umiejętności Twarde</h3>
+                <p class="display hard">najedź na ikonę</p>
+                <div class="containerSkills contHard">
+                    <i class="fab fa-html5" value="Posiadam wiedzę z zakresu html5"></i>
+                    <i class="fab fa-css3" value="Dobrze znam CSS"></i>
+                    <i class="fab fa-js" value="Chętnie programuję w JavaScript"></i>
+                    <i class="fab fa-git-square" value="Chętnie korzystam z systemu kontroli wersji Git"></i>
+                    <i class="fab fa-bootstrap" value="Potrafię korzystać z biblioteki Bootstrap"></i>
+                    <i class="fab fa-sass" value="Potrafię korzystać ze zmiennych,mixins i innych możliwości Sass"></i>
+                    <i class="fab fa-react" value="Rozwijam swoje umiejętności w programowaniu w React"></i>
+                </div>
             </div>
-            <h3>Umiejętności Twarde</h3>
-            <p class="display hard">najedź na ikonę</p>
-            <div class="container contHard">
-                <i class="fab fa-html5" value="Posiadam wiedzę z zakresu html5"></i>
-                <i class="fab fa-css3" value="Dobrze znam CSS"></i>
-                <i class="fab fa-js" value="Chętnie programuję w JavaScript"></i>
-                <i class="fab fa-git-square" value="Chętnie korzystam z systemu kontroli wersji Git"></i>
-                <i class="fab fa-bootstrap" value="Potrafię korzystać z biblioteki Bootstrap"></i>
-                <i class="fab fa-sass" value="Potrafię korzystać ze zmiennych,mixins i innych możliwości Sass"></i>
-                <i class="fab fa-react" value="Rozwijam swoje umiejętności w programowaniu w React"></i>
-            </div>
+            <a href="https://www.linkedin.com/in/micha%C5%82-noszczyk/" class="btn" target="_blank">Linkedin</a>
         </div>
-        <a href="https://www.linkedin.com/in/micha%C5%82-noszczyk/" class="btn" target="_blank">Linkedin</a>
-
     </section>
 
     <section class="section" id="education">
-        <h2>Wykształcenie</h2>
-        <hr>
-        <div class="main">
-            <h1 class="header">Akademia 108<span> &#8901 </span>Szkoła programowania<span> &#8901 </span>Warszawa</h1>
-            <p class="panelsEducation">Poznane technologie: GIT, HTML5, CSS3, JavaScript, SASS, GULP, React, Bootstrap.</p>
-        
-            <h1 class="header">Uniwersytet Marii Curie-Skłodowskiej<span> &#8901 </span>Lublin</h1>
-            <p class="panelsEducation">Licencjat z Ekonomii-specjalizacja: Przedsiębiorstwo w gospodarce rynkowej.</p>
-           
-            <h1 class="header">Uniwersytet Marii Curie-Skłodowskiej<span> &#8901 </span>Lublin</h1>
-            <p class="panelsEducation">Studia magisterskie uzupełniające z Filologii Angielskiej-specjalizacja: Literatura angielska.</p>
-       
-            <h1 class="header">Nauczycielskie Kolegium Języków Obcych<span> &#8901 </span>Lublin</h1>
-            <p class="panelsEducation">Licencjat z Filologii Angielskiej-specjalizacja: Literatura angielska.</p>
+        <div class="container">
+            <header>
+                <h2>Wykształcenie</h2>
+                <hr>
+            </header>
+            <div class="main">
+                <h1 class="headerAccordion">Akademia 108<span> &#8901 </span>Szkoła programowania<span> &#8901 </span>Warszawa
+                </h1>
+                <p class="panelEducation">Poznane technologie: GIT, HTML5, CSS3, JavaScript, SASS, GULP, React,
+                    Bootstrap.
+                </p>
+
+                <h1 class="headerAccordion">Uniwersytet Marii Curie-Skłodowskiej<span> &#8901 </span>Lublin</h1>
+                <p class="panelEducation">Licencjat z Ekonomii-specjalizacja: Przedsiębiorstwo w gospodarce rynkowej.
+                </p>
+
+                <h1 class="headerAccordion">Uniwersytet Marii Curie-Skłodowskiej<span> &#8901 </span>Lublin</h1>
+                <p class="panelEducation">Studia magisterskie uzupełniające z Filologii Angielskiej-specjalizacja:
+                    Literatura angielska.</p>
+
+                <h1 class="headerAccordion">Nauczycielskie Kolegium Języków Obcych<span> &#8901 </span>Lublin</h1>
+                <p class="panelEducation">Licencjat z Filologii Angielskiej-specjalizacja: Literatura angielska.</p>
+            </div>
         </div>
     </section>
 
     <section class="section portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <hr>
-        <div class="portfolio-wrapper">
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-1.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-2.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-3.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-4.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-5.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-6.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-7.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-8.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-9.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-10.jpg" alt="Portfolio item">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-11.jpg" alt="">
-                <h3>Projekt</h3>
-            </a>
-            <a href="" class="portfolio-item">
-                <img src="img/portfolio/photo-12.jpg" alt="">
-                <h3>Projekt</h3>
-            </a>
+        <div class="container">
+            <header>
+                <h2>Portfolio</h2>
+                <hr>
+            </header>
+            <div class="portfolio-wrapper">
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-1.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-2.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-3.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-4.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-5.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-6.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-7.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-8.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-9.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-10.jpg" alt="Portfolio item">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-11.jpg" alt="">
+                    <h3>Projekt</h3>
+                </a>
+                <a href="" class="portfolio-item">
+                    <img src="img/portfolio/photo-12.jpg" alt="">
+                    <h3>Projekt</h3>
+                </a>
+            </div>
         </div>
     </section>
 
     <script src="js/main.js"></script>
 </body>
+
 </html>

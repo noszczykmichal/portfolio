@@ -37,8 +37,9 @@ contHard.addEventListener('mouseover', function(event){
 //adding accordion
 
 const main=document.querySelector('[class=main]');
-const header=document.querySelectorAll('[class=header]');
+const header=document.querySelectorAll('[class=headerAccordion]');
 // console.log("header", header);
+
 
 
 main.addEventListener('click', function(event){

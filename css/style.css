@@ -32,7 +32,7 @@
     text-decoration: none;
     border: 2px solid #c345a9;
     background-color: #c345a9;
-    margin-top: 5em;
+    margin: 15px auto 0 auto;
     padding: 20px 50px;
     display: inline-block;
     background-color: transparent;
@@ -224,6 +224,38 @@ hr{
 .portfolio .portfolio-wrapper .portfolio-item h3:hover{
 	opacity: 1;
 	
+}
+
+/* -------------- Contact Section styles -------------- */
+
+.contact form{
+    max-width: 700px;
+    margin: 40px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form input:not([type="submit"]){
+    flex-basis: 48%;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.contact form textarea{
+    flex-basis: 100%;
+    padding: 15px;
+    height: 100px;
+}
+
+.contact form input, .contact form textarea{
+    border: 2px solid #c345a9;
+    font-size: 100%;
+}
+
+.contact form input:focus, .contact form textarea:focus{
+    border: 2px solid #543679;
+    color: #000
 }
 
 

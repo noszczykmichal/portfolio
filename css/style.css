@@ -117,6 +117,10 @@ hr{
 }
 /* -------------- About Section styles -------------- */
 
+.container .textAbout{
+    line-height: 2;
+    font-size: 18px;
+}
 
 .about-me-image{
     border-radius: 50%;
@@ -129,7 +133,11 @@ hr{
     background-color: #c345a9;
     padding: 25px 0px;
     color: #fff;
+    margin-bottom: 50px;
+}
 
+.headerSkills{
+    font-size: 1.5em;
 }
 
 .myskills h3{
@@ -164,6 +172,7 @@ hr{
     border-radius: 10px;
     margin-bottom: 20px;
     color: #fff;
+    font-size: 1.5em;
 }
 
 .headerAccordion:hover{

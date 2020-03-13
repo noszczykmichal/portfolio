@@ -30,8 +30,7 @@
 
 .btn{
     text-decoration: none;
-    border: 2px solid #c345a9;
-    background-color: #c345a9;
+    border: 2px solid #07a9ef;
     margin: 15px auto 0 auto;
     padding: 20px 50px;
     display: inline-block;
@@ -40,9 +39,9 @@
 }
 
 .btn:hover{
-    border: 2px solid #543679;
+    border: 2px solid #963583;
     border-radius: 5px;
-    background-color: #543679;
+    background-color: #963583;
     color: #fff;
 }
 
@@ -91,7 +90,7 @@ hr{
 
 .main-nav{
     position: sticky;
-    background-color: #543679;
+    background-color: #06314b;
     top: 0;
     z-index:100;
     padding: 14px 20px;
@@ -119,7 +118,7 @@ hr{
 
 .nav-menu-item a:hover{
     background-color: #fff;
-    color: #543679;
+    color: #06314b;
 }
 /* -------------- About Section styles -------------- */
 
@@ -136,7 +135,7 @@ hr{
 }
 
 .myskills{
-    background-color: #c345a9;
+    background-color: #06314b;    
     padding: 25px 0px;
     color: #fff;
     margin-bottom: 50px;
@@ -147,7 +146,7 @@ hr{
 }
 
 .myskills h3{
-    background-color: #543679;
+    background-color: #07a9ef;
     width: 100%;
 }
 
@@ -173,8 +172,8 @@ hr{
 }
 
 .headerAccordion{
-    background-color: #c345a9;
-    border: 2px solid #c345a9;
+    background-color: #06314b;
+    border: 2px solid #06314b;
     border-radius: 10px;
     margin-bottom: 20px;
     color: #fff;
@@ -263,27 +262,27 @@ hr{
     height: 100px;
 }
 
-.contact form input, .contact form textarea{
-    border: 2px solid #c345a9;
+.contact form input:not([type="submit"]), .contact form textarea{
+    border: 2px solid #06314b;
     font-size: 100%;
 }
 
 .contact form input:focus, .contact form textarea:focus{
-    border: 2px solid #543679;
+    border: 2px solid #c345a9;
     color: #000
 }
 
 .containerIcons{
     padding-top: 100px;
-    color: #543679;
     font-size: 2.5em;
     text-align: center;
 }
 
 .containerIcons i{
     margin-right: 20px;
+    color: #06314b;
 }
 
 .containerIcons i:hover{
-    color: #c345a9;
+    color: #963583;
 }

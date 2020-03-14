@@ -207,8 +207,8 @@ hr{
 }
 
 .portfolio .portfolio-wrapper .portfolio-item{
-    flex-basis: 25%;
-    height: 200px;
+    flex-basis: 33.33%;
+    height: 300px;
     margin: 0;
     position: relative;
 }
@@ -220,23 +220,46 @@ hr{
     object-position: center;
 }
 
-.portfolio .portfolio-wrapper .portfolio-item h3{
+.portfolio .portfolio-wrapper .portfolio-item .project{
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 123, 255, 0.8);
+	background-color: #543679;
 	top: 0;
-	font-size: 3em;
+	font-size: 1em;
 	color: #fff;
-	line-height: 200px;
 	font-weight: 300;
 	opacity: 0;
 	transition: all .3s;
 	margin: 0;
 }
 
-.portfolio .portfolio-wrapper .portfolio-item h3:hover{
-	opacity: 1;
+.projectIcons i{
+    margin-right: 20px;
+    font-size: 1.5em;
+    
+}
+
+.project .contLinks .link{
+    position: absolute;
+    color: #fff;
+}
+
+.code{
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+}
+
+.live{
+    padding: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+
+.portfolio .portfolio-wrapper .portfolio-item .project:hover{
+	opacity: 0.9;
 	
 }
 

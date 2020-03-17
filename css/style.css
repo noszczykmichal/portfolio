@@ -113,6 +113,7 @@ footer{
     font-weight: 700;
     color: #fff;
     padding: 14px 20px;
+    display: inline-block;
 }
 
 .nav-menu-item a:hover{
@@ -326,3 +327,80 @@ footer{
     color: #963583;
 }
 
+
+/* -------------- Responsive CSS -------------- */
+
+@media(max-width: 1200px){
+    .container{
+        max-width:992px;
+    }
+}
+
+@media(max-width:992px){
+
+    .container{
+        max-width: 768px;
+    }
+
+    .portfolio .portfolio-wrapper .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+@media(max-width: 768px){
+
+    .main-content h1{
+        font-size: 1.5em;
+    }
+    .container{
+        max-width: 95%;
+    }
+
+    .portfolio .portfolio-wrapper .portfolio-item{
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 480px){
+    
+    .main-content h1{
+        font-size: 1.5em;
+    }
+    
+    .main-nav label{
+        display: block;
+        padding: 14px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: right;
+    }
+
+    .main-nav .nav-menu{
+        display: none;
+    }
+
+    .main-nav #drop-nav:checked + ul{
+        display: block;
+    }
+
+    .main-nav .nav-menu .nav-menu-item{
+        display: block;
+        text-align: right;
+        margin: 0;
+    }
+
+    .main-nav .nav-menu .nav-menu-item a{
+        padding: 14px 20px;
+    }
+
+    .about .about-me-image{
+        max-height: 200px;
+        max-width: 200px;
+        border-radius: 50%;
+    }
+
+    .contact form input:not([type="submit"]){
+        flex-basis: 100%;
+    }
+}

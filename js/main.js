@@ -32,7 +32,7 @@ contHard.addEventListener('mouseover', function(event){
     }
 })
 
-//--------------Section About 
+//--------------Section Education 
 
 //adding accordion
 
@@ -60,3 +60,22 @@ main.addEventListener('click', function(event){
     
 })
 
+//--------------Section Contact
+
+//before sending the form, I verify whether values in above inputs are not just whitespaces
+
+const btn=document.querySelector('input[type=submit]');
+
+btn.addEventListener('click', function(event){
+    // I'm getting the values of input 'name' and 'lastname' 
+    const name=(document.getElementById('name').value).trim();
+    const lastname=(document.getElementById('lastname').value).trim();
+    
+    if(name=="" || lastname==""){
+        event.preventDefault();
+        alert('Proszę wprowadzić poprawne dane');
+        document.getElementById('name').value="";
+        document.getElementById('lastname').value="";
+    }
+    
+})

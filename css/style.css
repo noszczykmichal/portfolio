@@ -233,6 +233,11 @@ footer{
 	margin: 0;
 }
 
+.portfolio .portfolio-wrapper .portfolio-item .project h3{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 .portfolio .portfolio-wrapper .portfolio-item .project p{
     line-height: 1.3;
 }

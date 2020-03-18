@@ -71,11 +71,21 @@ btn.addEventListener('click', function(event){
     const name=(document.getElementById('name').value).trim();
     const lastname=(document.getElementById('lastname').value).trim();
     
-    if(name=="" || lastname==""){
+    if(name=="" && lastname==""){
         event.preventDefault();
-        alert('Proszę wprowadzić poprawne dane');
+        alert('Proszę wpisać poprawne dane w polu: Imię oraz Nazwisko');
         document.getElementById('name').value="";
         document.getElementById('lastname').value="";
+    }else if(lastname==""){
+        event.preventDefault();
+        alert('Proszę wpisać poprawne dane w polu: Nazwisko');
+        document.getElementById('lastname').value="";
+    }else if(name==""){
+        event.preventDefault();
+        alert('Proszę wpisać poprawne dane w polu: Imię');
+        document.getElementById('name').value="";
     }
     
 })
+
+

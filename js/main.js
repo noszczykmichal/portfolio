@@ -10,7 +10,7 @@ const displayHard=document.querySelector('[class*=hard]');
 let eventTarget=null;
 
 
-//I set addEventListener's-when the user will mouseover on the icons in 'myskills' div the exact content will be displayed in the paragraph, depending on attribute 'value' of the given icon
+//I set addEventListeners-when the user will mouseover on the icons in 'myskills' div the exact content will be displayed in the paragraph, depending on attribute 'value' of the given icon
 
 contSoft.addEventListener('mouseover', function(event){
     eventTarget=event.target;
@@ -18,7 +18,7 @@ contSoft.addEventListener('mouseover', function(event){
     if(eventTarget==contSoft){
         displaySoft.innerText="najedź na ikonę";
     }else{
-        displaySoft.innerText=eventTarget.getAttribute('value');
+        displaySoft.innerText=eventTarget.getAttribute('title');
     }
 })
 
@@ -28,7 +28,7 @@ contHard.addEventListener('mouseover', function(event){
     if(eventTarget==contHard){
         displayHard.innerText="najedź na ikonę";
     }else{
-        displayHard.innerText=eventTarget.getAttribute('value');
+        displayHard.innerText=eventTarget.getAttribute('title');
     }
 })
 

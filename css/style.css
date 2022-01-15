@@ -131,6 +131,11 @@ footer{
     font-size: 18px;
 }
 
+.textAbout a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .about-me-image{
     border-radius: 50%;
     margin-top: 40px;

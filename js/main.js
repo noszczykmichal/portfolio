@@ -3,8 +3,8 @@
 
 
 //I grab elements in the DOM
-const contSoft=document.querySelector('[class*=contSoft]'); //I grab containers for the icons
-const contHard=document.querySelector('[class*=contHard]'); 
+const contSoft=document.querySelector('[class*=soft-skills__list]'); //I grab containers for the icons
+const contHard=document.querySelector('[class*=hard-skills__list]'); 
 const displaySoft=document.querySelector('[class*=soft]');//I grab paragraphs that will serve as displays
 const displayHard=document.querySelector('[class*=hard]');
 
@@ -14,7 +14,7 @@ const displayHard=document.querySelector('[class*=hard]');
 contSoft.addEventListener('mouseover', function(event){
 
     if(event.target==contSoft){
-        displaySoft.innerText=".";
+        displaySoft.innerText="";
     }else{
         displaySoft.innerText=event.target.getAttribute('title');
     }
@@ -23,7 +23,7 @@ contSoft.addEventListener('mouseover', function(event){
 contHard.addEventListener('mouseover', function(event){
 
     if(event.target==contHard){
-        displayHard.innerText=".";
+        displayHard.innerText="";
     }else{
         displayHard.innerText=event.target.getAttribute('title');
     }
@@ -33,10 +33,10 @@ contHard.addEventListener('mouseover', function(event){
 
 //adding accordion
 
-const main=document.querySelector('.main');
-const headers=document.getElementsByClassName('headerAccordion');
+const accordion=document.querySelector('.accordion');
+const headers=document.getElementsByClassName('accordion__item');
 
-main.addEventListener('click', function(event){
+accordion.addEventListener('click', function(event){
     //event target is h3; not the div it's nested in
 
     const parentSibling=event.target.parentElement.nextElementSibling;
@@ -107,11 +107,11 @@ showMore.addEventListener('click', function(event){
     event.preventDefault();
     const spanAgreement=event.target.nextElementSibling;
 
-    if(spanAgreement.classList=="agreementShort"){
-        spanAgreement.classList.remove("agreementShort");
+    if(spanAgreement.classList=="consent-short"){
+        spanAgreement.classList.remove("consent-short");
         event.target.innerText="Zobacz mniej";
     }else if(spanAgreement.classList==""){
-        spanAgreement.classList.add("agreementShort");
+        spanAgreement.classList.add("consent-short");
         event.target.innerText="Zobacz więcej";
     }
 })

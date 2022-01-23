@@ -1,4 +1,28 @@
 "use strict";
+//--------------Navbar
+
+const navbar= document.querySelector('.mobile-nav');
+const hamburger= document.querySelector('.main-nav__icon-container');
+const backdrop=document.querySelector('.backdrop');
+
+hamburger.addEventListener('click', function(){
+    navbar.classList.add('open');
+    backdrop.style.display='block';
+    setTimeout(()=>{
+        backdrop.classList.add('open'), 100
+    })
+    hamburger.classList.add('hide');
+})
+
+backdrop.addEventListener('click', function(){
+    hamburger.classList.remove('hide');
+    backdrop.classList.remove('open');
+    setTimeout(()=>{
+        backdrop.style.display='none';
+    }, 200)
+    navbar.classList.remove('open');
+})
+
 //--------------Section About 
 
 

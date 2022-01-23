@@ -16,21 +16,30 @@
 </head>
 
 <body>
+    <div class="backdrop"></div>
     <header class="main-header">
         <div class="main-header__content">
             <h1 class="main-header__title">Front-end Developer</h1>
             <hr class="main-header__title-underline">
-            <p class="main-header__text"><span>HTML5 </span>&#9830;<span> CSS3 </span>&#9830;<span> JavaScript</span></p>
+            <p class="main-header__text"><span>HTML5 </span>&#9830;<span> CSS3 </span>&#9830;<span> JavaScript</span>
+            </p>
         </div>
     </header>
     <nav class="main-nav">
-        <label class="main-nav__icon-container" for="drop-nav"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="drop-nav">
+        <div class="main-nav__icon-container" for="drop-nav"><i class="fas fa-bars"></i></div>
         <ul class="main-nav__items">
             <li class="main-nav__item"><a href="#about-me">O MNIE</a></li>
             <li class="main-nav__item"><a href="#education">WYKSZTAŁCENIE</a></li>
             <li class="main-nav__item"><a href="#portfolio">PORTFOLIO</a></li>
             <li class="main-nav__item"><a href="#contact">KONTAKT</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item"><a href="#about-me">O MNIE</a></li>
+            <li class="mobile-nav__item"><a href="#education">WYKSZTAŁCENIE</a></li>
+            <li class="mobile-nav__item"><a href="#portfolio">PORTFOLIO</a></li>
+            <li class="mobile-nav__item"><a href="#contact">KONTAKT</a></li>
         </ul>
     </nav>
     <section class="section about-me" id="about-me">
@@ -48,14 +57,16 @@
                 która pozwoliła mi usystematyzować<br>dotychczasową wiedzę i umiejętności.</p>
             <p class="about-me__text">Każdą wolną chwilę poświecam na poszerzanie swojej wiedzy i tworzę nowe
                 projekty.<br>Jeśli chcesz się ze mną
-                skontaktować zapraszam do sekcji <a href="#contact">"Kontakt"</a>.<br>W sekcji <a href="#portfolio">"Portfolio"</a> znajdziesz również moje przykładowe projekty.</p>
+                skontaktować zapraszam do sekcji <a href="#contact">"Kontakt"</a>.<br>W sekcji <a
+                    href="#portfolio">"Portfolio"</a> znajdziesz również moje przykładowe projekty.</p>
             <div class="skills">
                 <h3 class="skills__title">Umiejętności Miękkie</h3>
                 <p class="skills__description soft-skills__description"></p>
                 <div class="skills__list soft-skills__list">
                     <i class="skills__item fas fa-users" title="Lubię pracę w zespole"></i>
                     <i class="skills__item far fa-comments" title="Sprawnie komunikuję się z ludźmi"></i>
-                    <i class="skills__item fas fa-tasks" title="Umię zarządzać czasem i radzę sobie pod presją czasu"></i>
+                    <i class="skills__item fas fa-tasks"
+                        title="Umię zarządzać czasem i radzę sobie pod presją czasu"></i>
                     <i class="skills__item fas fa-user-graduate" title="Chętnie uczę się nowych rzeczy"></i>
                 </div>
                 <h3 class="skills__title">Umiejętności Twarde</h3>
@@ -64,10 +75,13 @@
                     <i class="skills__item fab fa-html5" title="Posiadam wiedzę z zakresu html5"></i>
                     <i class="skills__item fab fa-css3" title="Dobrze znam CSS"></i>
                     <i class="skills__item fab fa-js" title="Chętnie programuję w JavaScript"></i>
-                    <i class="skills__item fab fa-git-square" title="Chętnie korzystam z systemu kontroli wersji Git"></i>
+                    <i class="skills__item fab fa-git-square"
+                        title="Chętnie korzystam z systemu kontroli wersji Git"></i>
                     <i class="skills__item fab fa-bootstrap" title="Potrafię korzystać z biblioteki Bootstrap"></i>
-                    <i class="skills__item fab fa-sass" title="Potrafię korzystać ze zmiennych,mixins i innych możliwości Sass"></i>
-                    <i class="skills__item fab fa-react" title="Rozwijam swoje umiejętności w programowaniu w React"></i>
+                    <i class="skills__item fab fa-sass"
+                        title="Potrafię korzystać ze zmiennych,mixins i innych możliwości Sass"></i>
+                    <i class="skills__item fab fa-react"
+                        title="Rozwijam swoje umiejętności w programowaniu w React"></i>
                 </div>
             </div>
         </div>
@@ -79,7 +93,7 @@
                 <h2 class="section__header-title">Wykształcenie</h2>
                 <hr class="section__header-title-underline">
             </header>
-            
+
             <div class="accordion">
 
                 <div class="accordion__item">
@@ -98,7 +112,8 @@
                 </div>
 
                 <div class="accordion__item">
-                    <h3 class="accordion__header">Nauczycielskie Kolegium Języków Obcych<span> &#8901; </span>Lublin</h3>
+                    <h3 class="accordion__header">Nauczycielskie Kolegium Języków Obcych<span> &#8901; </span>Lublin
+                    </h3>
                 </div>
                 <div class="accordion__body">
                     <p>Licencjat z Filologii Angielskiej-specjalizacja: Literatura angielska.</p>
@@ -108,11 +123,21 @@
                     <h3 class="accordion__header">Certyfikaty</h3>
                 </div>
                 <div class="accordion__body">
-                    <h4><a href="https://www.linkedin.com/company/academind-gmbh/" target="_blank">Academind GmbH</a><span> &#8901; </span><a href="https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/" target="_blank">CSS - The Complete Guide 2022 (incl. Flexbox, Grid & Sass)</a></h4>
-                    <p>Ponad 20 godzinny kurs w obszarze CSS poruszający wszystkie najnowsze koncepcje tj Grid, Flexbox oraz Sass. Ukończenie tego kursu pozwoliło mi pogłębić oraz usystematyzować dotychczas posiadaną wiedzę oraz umiejętności.</p>
-                    <h4><a href="https://www.linkedin.com/company/academind-gmbh/" target="_blank">Academind GmbH</a><span> &#8901; </span><a href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank">React - The Complete Guide (incl Hooks, React Router, Redux)</a></h4>
-                    <p>Przeszło 40 godzinny kurs w zakresu React.js dzięki, któremu poznałem najnowsze trendy przy budowaniu nowoczesnych aplikacji internetowych.</p>
-                    <h4><a href="https://akademia108.pl/" target="_blank">Akademia 108</a><span> &#8901; </span>Szkoła Programowania<span> &#8901; </span>Warszawa:</h4>
+                    <h4><a href="https://www.linkedin.com/company/academind-gmbh/" target="_blank">Academind
+                            GmbH</a><span> &#8901; </span><a
+                            href="https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/"
+                            target="_blank">CSS - The Complete Guide 2022 (incl. Flexbox, Grid & Sass)</a></h4>
+                    <p>Ponad 20 godzinny kurs w obszarze CSS poruszający wszystkie najnowsze koncepcje tj Grid, Flexbox
+                        oraz Sass. Ukończenie tego kursu pozwoliło mi pogłębić oraz usystematyzować dotychczas posiadaną
+                        wiedzę oraz umiejętności.</p>
+                    <h4><a href="https://www.linkedin.com/company/academind-gmbh/" target="_blank">Academind
+                            GmbH</a><span> &#8901; </span><a
+                            href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/"
+                            target="_blank">React - The Complete Guide (incl Hooks, React Router, Redux)</a></h4>
+                    <p>Przeszło 40 godzinny kurs w zakresu React.js dzięki, któremu poznałem najnowsze trendy przy
+                        budowaniu nowoczesnych aplikacji internetowych.</p>
+                    <h4><a href="https://akademia108.pl/" target="_blank">Akademia 108</a><span> &#8901; </span>Szkoła
+                        Programowania<span> &#8901; </span>Warszawa:</h4>
                     <p>Poznane technologie: GIT, HTML5, CSS3, JavaScript, jQuery, SASS, GULP, Bootstrap, React.</p>
                 </div>
             </div>
@@ -137,10 +162,10 @@
                             <i class="project__icon fab fa-js"></i>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/To-do-list-JS" class="project__link project__link--code"
-                                target="_blank">Code</a>
-                            <a href="https://noszczykmichal.github.io/to-do-list/index.html" class="project__link project__link--live"
-                                target="_blank">Live</a>
+                            <a href="https://github.com/noszczykmichal/To-do-list-JS"
+                                class="project__link project__link--code" target="_blank">Code</a>
+                            <a href="https://noszczykmichal.github.io/to-do-list/index.html"
+                                class="project__link project__link--live" target="_blank">Live</a>
                         </div>
                     </div>
                 </div>
@@ -157,10 +182,10 @@
                             <i class="project__icon fab fa-bootstrap"></i>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/klub_podrozniczy" class="project__link project__link--code"
-                                target="_blank">Code</a>
-                            <a href="https://noszczykmichal.github.io/klub_podrozniczy/index.html" class="project__link project__link--live"
-                                target="_blank">Live</a>
+                            <a href="https://github.com/noszczykmichal/klub_podrozniczy"
+                                class="project__link project__link--code" target="_blank">Code</a>
+                            <a href="https://noszczykmichal.github.io/klub_podrozniczy/index.html"
+                                class="project__link project__link--live" target="_blank">Live</a>
                         </div>
                     </div>
                 </div>
@@ -177,10 +202,10 @@
                             <div class="project__icon--jquery"></div>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/landing_pozyczka" class="project__link project__link--code"
-                                target="_blank">Code</a>
-                            <a href="https://noszczykmichal.github.io/landing_pozyczka/index.html" class="project__link project__link--live"
-                                target="_blank">Live</a>
+                            <a href="https://github.com/noszczykmichal/landing_pozyczka"
+                                class="project__link project__link--code" target="_blank">Code</a>
+                            <a href="https://noszczykmichal.github.io/landing_pozyczka/index.html"
+                                class="project__link project__link--live" target="_blank">Live</a>
                         </div>
                     </div>
                 </div>
@@ -188,7 +213,8 @@
                 <div class="portfolio-item project4">
                     <div class="project">
                         <h3 class="project__title">Landing page firmy pożyczkowej</h3>
-                        <p class="project__description">Projekt zbliżony do wcześniejszego jednak stworzony w oparciu o Gulp
+                        <p class="project__description">Projekt zbliżony do wcześniejszego jednak stworzony w oparciu o
+                            Gulp
                             i Sass</p>
                         <p class="project__description">Zastosowane technologie:</p>
                         <div class="project__icons">
@@ -197,8 +223,8 @@
                             <div class="project__icon--jquery"></div>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/landing_pozyczka_sass" class="project__link project__link--code"
-                                target="_blank">Code</a>
+                            <a href="https://github.com/noszczykmichal/landing_pozyczka_sass"
+                                class="project__link project__link--code" target="_blank">Code</a>
                             <a href="https://noszczykmichal.github.io/landing_pozyczka_sass/app/index.html"
                                 class="project__link project__link--live" target="_blank">Live</a>
                         </div>
@@ -208,7 +234,8 @@
                 <div class="portfolio-item project5">
                     <div class="project">
                         <h3 class="project__title">Pesel generator</h3>
-                        <p class="project__description">Projekt umożliwia wygenerowanie przykładowego numeru Pesel. Numer
+                        <p class="project__description">Projekt umożliwia wygenerowanie przykładowego numeru Pesel.
+                            Numer
                             generowany jest zgodnie z
                             informacjami dostępnymi na stronie rządowej.</p>
                         <p class="project__description">Zastosowane technologie:</p>
@@ -218,10 +245,10 @@
                             <i class="project__icon fab fa-js"></i>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/Generator-Pesel" class="project__link project__link--code"
-                                target="_blank">Code</a>
-                            <a href="https://noszczykmichal.github.io/Generator%20Pesel/index.html" class="project__link project__link--live"
-                                target="_blank">Live</a>
+                            <a href="https://github.com/noszczykmichal/Generator-Pesel"
+                                class="project__link project__link--code" target="_blank">Code</a>
+                            <a href="https://noszczykmichal.github.io/Generator%20Pesel/index.html"
+                                class="project__link project__link--live" target="_blank">Live</a>
                         </div>
                     </div>
                 </div>
@@ -229,7 +256,8 @@
                 <div class="portfolio-item project6">
                     <div class="project">
                         <h3 class="project__title">Burger Builder</h3>
-                        <p class="project__description">Projekt umożliwiający zbudowanie hamburgera o którym zawsze śniłeś.
+                        <p class="project__description">Projekt umożliwiający zbudowanie hamburgera o którym zawsze
+                            śniłeś.
                             Przy tworzeniu tej aplikacji korzystałem m.in. z takich technologii jak React Router, czy
                             Redux.</p>
                         <p class="project__description">Zastosowane technologie:</p>
@@ -239,10 +267,10 @@
                             <i class="project__icon fab fa-js"></i>
                         </div>
                         <div>
-                            <a href="https://github.com/noszczykmichal/burger_builder" class="project__link project__link--code"
-                                target="_blank">Code</a>
-                            <a href="https://react-burger-builder-c365e.firebaseapp.com/" class="project__link project__link--live"
-                                target="_blank">Live</a>
+                            <a href="https://github.com/noszczykmichal/burger_builder"
+                                class="project__link project__link--code" target="_blank">Code</a>
+                            <a href="https://react-burger-builder-c365e.firebaseapp.com/"
+                                class="project__link project__link--live" target="_blank">Live</a>
                         </div>
                     </div>
                 </div>
@@ -298,7 +326,8 @@
                 <i class="footer__link-icon fab fa-github"></i>
             </a>
             <a class="footer__link" href="https://www.codewars.com/users/noszczykmichal" target="_blank">
-                <img class="footer__link-icon" src="https://www.codewars.com/users/noszczykmichal/badges/micro" alt="codewars profile badge">
+                <img class="footer__link-icon" src="https://www.codewars.com/users/noszczykmichal/badges/micro"
+                    alt="codewars profile badge">
             </a>
             <a class="footer__link" href="https://www.linkedin.com/in/michal-noszczyk" target="_blank">
                 <i class="footer__link-icon fab fa-linkedin-in"></i>

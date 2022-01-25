@@ -86,7 +86,6 @@ accordion.addEventListener('click', function(event){
             panel.classList.add('active');
         }
     }
-    
 })
 
 //--------------Section Contact
@@ -94,7 +93,8 @@ accordion.addEventListener('click', function(event){
 //before sending the form, I verify whether values in inputs are not just whitespaces
 
 const btn=document.querySelector('input[type=submit]');
-const showMore=document.getElementById('showMore');
+const showMoreBtn=document.querySelector('.show-more__btn');
+const consent=document.querySelector('.consent');
 
 btn.addEventListener('click', function(event){
     // I'm getting the values of input 'name' and 'lastname'; and I'm assigning checkbox and text area to variables;
@@ -127,15 +127,13 @@ btn.addEventListener('click', function(event){
 
 //switching between full and short consent for processing of personal data
 
-showMore.addEventListener('click', function(event){
+showMoreBtn.addEventListener('click', function(event){
     event.preventDefault();
-    const spanAgreement=event.target.nextElementSibling;
-
-    if(spanAgreement.classList=="consent-short"){
-        spanAgreement.classList.remove("consent-short");
-        event.target.innerText="Zobacz mniej";
-    }else if(spanAgreement.classList==""){
-        spanAgreement.classList.add("consent-short");
-        event.target.innerText="Zobacz więcej";
+    if(!consent.classList.contains('open')){
+        consent.classList.add('open');
+        showMoreBtn.innerText='Zobacz mniej';
+    }else{
+        consent.classList.remove('open');
+        showMoreBtn.innerText='Zobacz więcej';
     }
 })

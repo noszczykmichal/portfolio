@@ -45,7 +45,7 @@
 }
 
 .container{
-    max-width: 1170px;
+    max-width: 95%;
     margin: auto;
 }
 
@@ -78,12 +78,14 @@
 
 .main-header__content{
     display: block;
-    justify-content: center;
     text-align: center;
     margin-top: 2rem;
-    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
+}
+
+.main-header__title{
+    font-size: 3rem;
 }
 
 .main-header__text{
@@ -104,36 +106,24 @@
     background-color: #53708F;
     top: 0;
     z-index: 100;
-    padding: 1rem 2rem;
+    padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .main-nav__icon-container{
-    display: none;
+    display: block;
+    opacity: 1;
+    padding: 0.5rem 0.75rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: right;
+    transition: opacity 0.5s ease-out;
 }
 
 .main-nav__items{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.main-nav__item{
-    display: inline;
-}
-
-.main-nav__item a{
-    text-decoration: none;
-    font-weight: 700;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: inline-block;
-}
-
-.main-nav__item a:hover{
-    background-color: #fff;
-    color: #53708F;
+    display: none;
 }
 
 .mobile-nav{
@@ -176,9 +166,9 @@
 /* -------------- About Section styles -------------- */
 
 .about-me__image{
-    border-radius: 50%;
     height: 30%;
     width: 30%;
+    border-radius: 50%;
     filter: grayscale(50%);
 }
 
@@ -198,7 +188,6 @@
 
 .skills__title{
     font-size: 1.5rem;
-    width: 100%;
 }
 
 .skills__description{
@@ -212,7 +201,8 @@
 }
 
 .skills__item{
-    font-size: 3rem;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
     color: #846BAF;    
 }
 
@@ -223,13 +213,14 @@
 /* -------------- Education Section styles -------------- */
 
 .accordion__item{
+    height: 4rem;
     display: flex;
+    align-items: center;
     border: 0.1rem solid #53708F;
     border-radius: 0.5rem;
     margin-bottom: 1.5rem;
     color: #53708F;
     font-size: 1.5rem;
-    align-items: center;
 }
 
 .accordion__item:hover{
@@ -242,6 +233,7 @@
 .accordion__header{
     width: 100%;
     margin: 0;
+    font-size: 1rem;
 }
 
 .accordion__body{
@@ -250,10 +242,6 @@
 
 .accordion__body a{
     color: #000000;
-}
-
-.active{
-    display: block;
 }
 
 /* -------------- Portfolio Section styles -------------- */
@@ -269,7 +257,7 @@
 }
 
 .portfolio-item{
-    flex-basis: 33.33%;
+    flex-basis: 100%;
     height: 300px;
     margin: 0;
     position: relative;
@@ -307,18 +295,22 @@
 	top: 0;
 	font-size: 16px;
 	color: #fff;
-    opacity: 0;
-	transition: all .3s;
+    opacity: 0.8;
+	transition: all 0.3s;
 	margin: 0;
 }
 
+.project:hover{
+	opacity: 0.8;
+}
+
 .project__title{
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 20px;
 }
 
-.project__description,
-.project__description--used-technologies{
+.section .project__description{
+    margin: 10px 32px;
     line-height: 1.3;
 }
 
@@ -356,22 +348,16 @@
     right: 0;
 }
 
-.project:hover{
-	opacity: 0.9;
-}
-
 /* -------------- Contact Section styles -------------- */
 
 .contact form{
-    max-width: 700px;
     margin: 2.5rem auto 2rem auto;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .contact form input:not([type="submit"], [type="checkbox"]){
-    flex-basis: 48%;
+    flex-basis: 100%;
     padding: 1rem;
     margin-bottom: 1rem;
 }
@@ -387,42 +373,40 @@
     font-size: 100%;
 }
 
-.contact form label{
-    padding: 1rem 0.3rem 0 0.3rem;
-    text-align: justify;
-    font-size: 50%;
-}
-
-.contact form label a{
-    text-decoration: underline;
-    font-size: 0.75rem;
-}
-
-span:nth-child(4){
-    display: block;
-    line-height: 1.5;
-}
-
-/* class for hiding the long text of consent for processing of personal data */
-.consent-short{
-    visibility: hidden;
-}
-
 .contact form input:not([type="checkbox"], [type="submit"]):focus, .contact form textarea:focus{
     box-shadow: 5px 5px 5px #846BAF;
     color: #000;
     outline-color: #53708F;
 }
 
-.open{
-    transform: translateY(0);
-    opacity: 1;
+.contact form label{
+    padding: 1rem 0.3rem 0 0.3rem;
+    text-align: justify;
+    font-size: 50%;
 }
 
-.hide{
+.show-more__btn{
+    display: inline-block;
+    margin-top: 0.1rem;
+    padding: 0.1rem ; 
+    border: 0.1rem solid #53708F;
+    border-radius: 0.1rem;
+    background-color: #53708F;
+    color:#fff;
+    font-size: 0.75rem;
+    text-decoration: none;
+}
+
+.show-more__btn:hover{
+    background-color: #FF9787;
+    border: 0.1rem solid #FF9787;
+}
+
+.consent{
+    display: block;
+    margin-bottom: 0.4rem;
     opacity: 0;
 }
-
 
 /* -------------- Footer styles -------------- */
 
@@ -431,18 +415,20 @@ footer{
     width: 100%;
     padding: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .footer__copy-right{
-    text-align: right;
+    order: 2;
+    text-align: center;
     margin-right: 2rem;
 }
 
 .footer__icons{
-    font-size: 2rem;
-    text-align: left;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .footer__copy-right,
@@ -455,7 +441,7 @@ footer{
 }
 
 .footer__link-icon{
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
     color: #53708F;
 }
 
@@ -463,167 +449,10 @@ footer{
     color: #FF9787;
 }
 
-
-/* -------------- Responsive CSS -------------- */
-
-@media(max-width: 1200px){
-    .container{
-        max-width:992px;
-    }
-
-    .project{
-        opacity: 0.8;
-    }
+/* -------------- Utility classes for components manipulation -------------- */
+.active{
+    display: block;
 }
-
-@media(max-width:992px){
-
-    .container{
-        max-width: 768px;
-    }
-
-    .portfolio-item{
-        flex-basis: 50%;
-    }
-
-    .project{
-        opacity: 0.8;
-    }
-}
-
-@media(max-width: 768px){
-
-    .main-header__title{
-        font-size: 3rem;
-    }
-
-    .main-nav__item a{
-        padding: 1rem 0.75rem;
-    }
-
-    .container{
-        max-width: 95%;
-    }
-
-    .skills__item{
-        font-size: 2.5rem;
-    }
-
-    .portfolio-item{
-        flex-basis: 100%;
-    }
-
-    .project{
-        opacity: 0.8;
-    }
-}
-
-@media(max-width: 612px){
-    .main-nav{
-        padding: 1rem;
-    }
-
-    .accordion__item{
-        height: 4rem;
-    }
-
-    footer{
-        flex-direction: column;
-    }
-
-    .footer__copy-right{
-        order: 2;
-        text-align: center;
-    }
-
-    .footer__icons{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-}
-
-@media(max-width: 480px){
-    
-    .main-nav__icon-container{
-        display: block;
-        opacity: 1;
-        padding: 0.5rem 0.75rem;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-        text-align: right;
-        transition: opacity 0.5s ease-out;
-    }
-
-    .main-nav{
-        justify-content: flex-end;
-        flex-direction: column;
-    }
-
-    .main-nav__items{
-        display: none;
-    }
-
-    #drop-nav:checked + ul{
-        display: block;
-    }
-
-    .main-nav__item{
-        display: block;
-        text-align: right;
-        margin: 0;
-    }
-
-    .main-nav__item a{
-        padding: 1rem 0.75rem;
-    }
-
-    .about-me__image{
-        max-height: 200px;
-        max-width: 200px;
-        border-radius: 50%;
-    }
-
-    .skills__item{
-        font-size: 1.5rem;
-    }
-
-    .accordion__header{
-        font-size: 1rem;
-    }
-
-    .project{
-        opacity: 0.8;
-    }
-
-    .project__description,
-    .project__description--used-technologies{
-        margin: 1rem 2rem;
-    }
-
-    .contact form input:not([type="submit"]){
-        flex-basis: 100%;
-    }
-}
-
-@media(max-width: 359px){
-    .skills__item{
-        margin: 0 0.5rem;
-    }
-
-    .project__title{
-        font-size: 24px;
-    }
-
-    .section .project__description{
-        margin: 10px 32px;
-    }
-
-    .footer__link-icon {
-        margin-right: 0.5rem;
-    }
-}
-
 
 .open{
     transform: translateY(0);
@@ -633,3 +462,9 @@ footer{
 .hide{
     opacity: 0;
 }
+
+/* -------------- Responsive CSS -------------- */
+
+
+
+

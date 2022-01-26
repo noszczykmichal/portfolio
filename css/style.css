@@ -300,10 +300,6 @@
 	margin: 0;
 }
 
-.project:hover{
-	opacity: 0.8;
-}
-
 .project__title{
     font-size: 24px;
     margin-top: 20px;
@@ -465,6 +461,137 @@ footer{
 
 /* -------------- Responsive CSS -------------- */
 
+@media(min-width: 359px){
+    .project__title{
+        font-size: 32px;
+    }
 
+    .section .project__description{
+        margin: 2rem;
+    }
+
+    .footer__link-icon {
+        margin-right: 1.5rem;
+    } 
+}
+
+@media(min-width: 480px){
+    .main-nav{
+        justify-content: center;
+    }
+
+    .main-nav__icon-container{
+        display: none;
+    }
+
+    .main-nav__items{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+
+    .main-nav__item{
+        display: inline;
+    }
+
+    .main-nav__item a{
+        text-decoration: none;
+        font-weight: 700;
+        color: #fff;
+        padding: 1rem 0.75rem;
+        display: inline-block;
+    }
+
+    .main-nav__item a:hover{
+        background-color: #fff;
+        color: #53708F;
+    }
+
+    .about-me__image{
+        max-width: 200px;
+    }
+
+    .skills__item{
+        font-size: 2.5rem;
+    }
+
+    .accordion__header{
+        font-size: 1.5rem;
+    }
+
+    .contact form{
+        max-width: 700px;
+        justify-content: space-between;
+    }
+
+    .contact form input:not([type="submit"], [type="checkbox"]) {
+        flex-basis: 48%;
+    }
+}
+
+@media(min-width: 612px){
+    .accordion__item{
+        height: auto;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+    .footer__copy-right{
+        text-align: right;
+    }
+
+    .footer__icons {
+        text-align: left;
+        order: 2;
+    }
+}
+
+@media(min-width: 768px){
+    .main-nav__item a {
+        padding: 1rem 2rem;
+    }
+
+    .container{
+        max-width: 768px;
+    }
+
+    .skills__item {
+        font-size: 3rem;
+    }
+
+    .portfolio-item{
+        flex-basis: 50%;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width:992px;
+    }
+
+    .portfolio-item{
+        flex-basis: 33.33%;
+    }
+
+    .section .project__description {
+        margin: 10px 32px;
+    }
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1170px;
+    }
+
+    .project{
+        opacity: 0;
+    }
+
+    .project:hover{
+        opacity: 0.8;
+    }
+}
 
 

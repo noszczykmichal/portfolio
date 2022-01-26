@@ -143,6 +143,7 @@
 
 .mobile-nav__items{
     margin: 0;
+    padding: 0 1rem;
     background: linear-gradient(to right bottom,rgba(83, 112, 143, 0.7),  rgba(80, 68, 18, 0.6));
     height: 30vh;
     z-index: 400;

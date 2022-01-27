@@ -273,7 +273,7 @@
 }
 
 .project3{
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, transparent), url('../img/portfolio/landing_pozyczka.png') center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 100%, transparent), url('../img/portfolio/freedom_uhost.jpg') center/cover no-repeat;
 }
 
 .project4{
@@ -467,10 +467,6 @@ footer{
         font-size: 32px;
     }
 
-    .section .project__description{
-        margin: 2rem;
-    }
-
     .footer__link-icon {
         margin-right: 1.5rem;
     } 
@@ -518,6 +514,10 @@ footer{
 
     .accordion__header{
         font-size: 1.5rem;
+    }
+
+    .section .project__description{
+        margin: 2rem;
     }
 
     .contact form{
